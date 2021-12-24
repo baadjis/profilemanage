@@ -1,0 +1,37 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+
+    command: >
+      sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+   
+    volumes:
+      - .:/code
+
+    expose:
+      - 8000
+   
+    environment:
+      - DB_HOST=db
+      - DB_NAME=profileappDB
+      - DB_USER=profileappAD
+      - DB_PASS=Apppassword1
+    depends_on:
+      - db
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=profileappDB
+      - POSTGRES_USER=profileappAD
+      - POSTGRES_PASSWORD=Apppassword1
+    ports:
+      - "5431:5432"
+    volumes:
+      - dbvolume:/var/lib/postgresql/data
+
+volumes:
+    dbvolume:
