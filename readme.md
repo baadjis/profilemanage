@@ -1,10 +1,10 @@
-#### **Profilemanage**
+# Profilemanage
 
 A simple login register system and profile editing app built with django and bootsrap
 
-**Usage:**
+## Usage:
 
-***install***
+### install
 
 clone the repository 
 
@@ -14,20 +14,20 @@ The makefile file contains docker commands shortands
 
 
 
-***to build the image***
+### to build the image
 
   go to the root folder and run 
 
    `` make build ``
 
-***To start the server***
+### To start the server
 
 
 run:   
 
  ``  make up ``
 
-if you want the docker to run on background
+if you want docker to run on background
 
 
  run:  
@@ -38,7 +38,7 @@ if you want the docker to run on background
 
 
 
-***to create a superuser***
+### To create a superuser
 
 
 run:
@@ -48,23 +48,24 @@ run:
 
 
 
-***Login and registration***
+### Login and registration
 
 
-once the server is launched it will 
+once the server is launched  
 connect to :
 
 http://127.0.0.1:8000/
 
 
-render the homage
+you will be on homepage
+
+Then you can register or login if you 
+
+are already registered
 
 
-Then you can register or login if you are already registered
 
-
-
-***Profile edit***
+### Profile edit
 
 once successfuly loged, your profile page will appear
 
