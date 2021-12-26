@@ -34,9 +34,21 @@ if you want docker to run on background
  
  `` make upd ``
 
+
+### To stop the server
  
+ run:   
 
 
+ ``  make stop ``
+
+### To restart
+
+
+run:   
+
+ ``  make restart ``
+ 
 
 ### To create a superuser
 
