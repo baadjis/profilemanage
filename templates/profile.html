@@ -3,9 +3,6 @@
 {% block style %}
 <style type="text/css">
 
-body {
-	background: #eee !important;
-}
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -52,7 +49,7 @@ body {
 
 {% block content %}
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top" >
+<nav class="navbar navbar-expand-lg navbar-white bg-white navbar-fixed-top py-3" >
     <div class="container">
         <a class="navbar-brand" href="#">PM</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -107,8 +104,8 @@ body {
         </div>
     </div>
 </nav>
-
-<div class = "container">
+<hr class="my-4">
+<div class = "container d-flex justify-content-center">
   <div class = "col-md-6 col-md-offset-3">
       <h1>Your profile</h1>
       
@@ -129,11 +126,11 @@ body {
                 <p class="text-muted">{{ user.user}}</p>
               </div>
               <div class="col-6 mb-3">
-                <h6>joined</h6>
+                <h6>Joined</h6>
                 <p class="text-muted">{{ user.user.date_joined}}</p>
               </div>
               <div class="col-6 mb-3">
-                <h6>modified</h6>
+                <h6>Modified</h6>
                 <p class="text-muted">{{ user.date_modified}}</p>
               </div>
             </div>
